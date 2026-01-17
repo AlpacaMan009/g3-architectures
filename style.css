@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+}
+
+/* shared styles */
+.text-gray {
+    color: #424242;
+}
+
+.text-light-gray {
+    color: #727272;
+}
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+.primary {
+    background-color: #FF900E;
+    color: white;
+    border-radius: 10px;
+    width: 180px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-style: none;
+    padding: 20px 25px;
+}
+
+.paragraphs{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.navlinks {
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* banner related */
+
+.banner-content {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+.banner-image {
+    width: 100%;
+}
+
+
+.teams{
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    /* margin-top: 50px; */
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    /* width: 100%; */
+}
+
+.feature{
+    margin-left: 120px;
+    max-width: 530px;
+}
+
+.first-2-letters{
+    color: #727272;
+    font-weight: 400;
+}
+
+.lastone{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.section-title{
+    font-size: 3rem;
+}
+
+/* RESPONSIVE MEDIA QUERY FOR HEADER, NAVBAR & BANNER */
+
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .navlinks {
+        flex-direction: column;
+    }
+
+    .teams{
+        flex-direction: column;
+ 
+    }
+
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr) ;
+    }
+
+    .feature{
+        margin: 50px;
+        /* align-items: center; */
+    }
+}
+
+/* fFOR MEDIUM DEVICE */
+
+@media screen and (max-width:992px) and (min-width:576px) {
+    .teams{
+        flex-direction: column;
+ 
+    }
+
+    .feature{
+        margin: 20px auto;
+        /* align-items: center; */
+    }
+}
+
